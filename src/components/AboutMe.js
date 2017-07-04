@@ -45,7 +45,7 @@ class AboutMe extends React.Component{
                     </Accordion.Title>
                     <Accordion.Content>
                       <p>
-                        A dog is a type of domesticated animal. Known for its loyalty and faithfulness, 
+                        A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
                         {' '}it can be found as a welcome guest in many households across the world.
                       </p>
                     </Accordion.Content>
