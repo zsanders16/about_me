@@ -2,7 +2,7 @@
   "name": "about_me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/zsanders16/about_me",
+  "homepage": "https://github.com/zsanders16/about_me_build/",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
