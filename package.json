@@ -2,7 +2,7 @@
   "name": "about_me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zsanders16.github.com/about_me/",
+  "homepage": "https://zsanders16.github.io/about_me/",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
