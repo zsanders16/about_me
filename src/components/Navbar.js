@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <Segment inverted>
       <Menu inverted secondary>
-        <Menu.Item name='About Me Page' />
-        <Menu.Item name='Github Page'  />
-        <Menu.Item name='LinkedIn'  />
+        <Menu.Item ><a href='https://zsanders16.github.io/about_me/' target="_blank">About Me</a></Menu.Item>
+        <Menu.Item ><a href='https://github.com/zsanders16' target="_blank">GitHub</a></Menu.Item>
+        <Menu.Item ><a href='https://www.linkedin.com/in/zachary-sanders-a189b071/' target="_blank">LinkedIn</a></Menu.Item>
       </Menu>
     </Segment>
   )
