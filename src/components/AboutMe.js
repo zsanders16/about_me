@@ -13,7 +13,8 @@ class AboutMe extends React.Component{
         multiple modules, allowing the HOA to activate/deactivate the modules they want to utilize as well as set the security level \
         of those modules.  This allows the HOA board to modify the site to best fit their requirements.  In addition, they are able to send \
         mailers, display upcoming events, modify the home page, and discuss HOA business securely in a discussion forum.  This \
-        application is in production so the code has not been made public, however access to the code can be provided upon request.',
+        application is in production so the code has not been made public, however access to the code can be provided upon request. \
+        An admin login is admin@test.com with password of password.  Feel free to navigate the site and test its functionality.',
         herokuLink: 'https://stubbedsite.com'
       },
       {title: 'Weather Application',
@@ -26,7 +27,7 @@ class AboutMe extends React.Component{
         herokuLink: 'https://weather-station-app.herokuapp.com'
       },
       {title: 'Sticky Notes',
-        description: 'This sticky notes app written in react. User is able to create as many sticky notes as they want and add list \
+        description: 'This sticky notes app is written in react. User is able to create as many sticky notes as they want and add list \
         items to each sticky note.',
         gitLink: 'https://github.com/zsanders16/redux-sticky-notes'
       },
