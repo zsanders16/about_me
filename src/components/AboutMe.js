@@ -1,16 +1,34 @@
 import React from 'react';
 import Project from './Project';
-import { Segment, Container, Grid, Image } from 'semantic-ui-react';
+import { Segment, Container, Grid, Image, Header } from 'semantic-ui-react';
 
 class AboutMe extends React.Component{
   state = {
     languages: ['Ruby', 'Javascript', 'HTML', 'CSS', 'SQL', 'Java', 'C#'],
     frameworks: ['Rails', 'React', 'Redux', 'Bootstrap', 'Materialize', 'Semantic UI React' ],
     projects: [
-      {title: 'Ruby Calculator',
-        description: 'CLI calculator personal project written in ruby.  Allows for user to input mathmatical calcualtion. \
-        It uses regular expressions to follow order of operations and retun the result.',
-        gitLink: 'https://github.com/zsanders16/ruby-calculator'
+      {title: 'Homeowner Association Site',
+        description: 'This is a freelance project written with Ruby on Rails as an API with a React and Redux frontend.  This is a \
+        fully dynamic webapp that uses Devise with JSON web tokens to authenticate standard and admin users. The application has \
+        multiple modules, allowing the HOA to activate/deactivate the modules they want to utilize as well as set the security level \
+        of those modules.  This allows the HOA board to modify the site to best fit their requirements.  In addition, they are able to send \
+        mailers, display upcoming events, modify the home page, and discuss HOA business securely in a discussion forum.  This \
+        application is in production so the code has not been made public, however access to the code can be provided upon request.',
+        herokuLink: 'https://stubbedsite.com'
+      },
+      {title: 'Weather Application',
+        description: 'This was a group project.  It is written in Ruby on Rails as an API with a React \
+        and Redux frontend.  We are collecting data from an Arduino with an active display in our react app.  Additionally, we are \
+        pulling weather data from the NOA api, allowing the user to select how they want to view and compare weather data from different locations. \
+        It is currently hosted on heroku.  The login is test@test.com with password of password.  Part of the Tables and Charts functionality requires \
+        the import of the Arduino data upload and will not be fully functional.',
+        gitLink: 'https://github.com/zsanders16/weather-station-app',
+        herokuLink: 'https://weather-station-app.herokuapp.com'
+      },
+      {title: 'Sticky Notes',
+        description: 'This sticky notes app written in react. User is able to create as many sticky notes as they want and add list \
+        items to each sticky note.',
+        gitLink: 'https://github.com/zsanders16/redux-sticky-notes'
       },
       {title: 'Ecommerce Applicaion',
         description: 'Ecommerce application was a group project written in Ruby on Rails.  It demonstrates relationships between SQL \
@@ -18,17 +36,10 @@ class AboutMe extends React.Component{
         In addition, mailers and jobs are used as well as RSpec for testing models and controllers.',
         gitLink: 'https://github.com/zsanders16/ecommerce_app-'
       },
-      {title: 'Sticky Notes',
-        description: 'This sticky notes app written in react. User is able to create as many sticky notes as they want and add list \
-        items to each sticky note.',
-        gitLink: 'https://github.com/zsanders16/redux-sticky-notes'
-      },
-      {title: 'Weather Application',
-        description: 'This is our current group project we are working on.  It is written in Ruby on Rails as an API with a React \
-        with Redux frontend.  We are collecting data from an Arduino with an active display in our react app.  Additionally, we are \
-        pulling weather data from NOA api, allowing the user to select how they want to view and compare weather data from different locations. \
-        It will eventually be hosted on heroku.',
-        gitLink: 'https://github.com/zsanders16/weather-station-app'
+      {title: 'Ruby Calculator',
+        description: "CLI calculator personal project written in ruby.  Allows for user to input mathmatical calcualtion. \
+        It uses regular expressions to follow order of operations and retun the result.",
+        gitLink: 'https://github.com/zsanders16/ruby-calculator'
       },
     ]
   }
@@ -36,10 +47,10 @@ class AboutMe extends React.Component{
   about() {
     return(
       <Segment raised>
-        <Grid celled>
+        <Grid >
           <Grid.Row>
             <Grid.Column width={3}>
-              <Image src='http://res.cloudinary.com/dr8gznhjv/image/upload/c_scale,h_5184,z_1/v1499623918/IMG_2958_copy_edaqq3.jpg' />
+              <Image style={{marginTop: '20px'}} src='http://res.cloudinary.com/dr8gznhjv/image/upload/c_scale,h_5184,z_1/v1499623918/IMG_2958_copy_edaqq3.jpg' />
             </Grid.Column>
             <Grid.Column width={13} >
               <Grid>
@@ -51,22 +62,26 @@ class AboutMe extends React.Component{
                   <h1>Contact Info:</h1>
                 </Grid.Column>
                 <Grid.Column width={6} >
-                  <p style={{marginTop: '5px'}, {marginBottom: '-3px'}}>Cell: (801) 839-8733</p>
+                  <p style={{marginTop: '5px', marginBottom: '-3px'}}>Cell: (801) 839-8733</p>
                   <p style={{margin: '-3px'}}>zsanders@icloud.com</p>
                 </Grid.Column>
               </Grid.Row>
               </Grid>
-              <p style={{marginTop: '20px'}}>
-                I am currently a student at DevPoint Labs, a full stack web development boot camp, that focuses on Ruby on Rails and PostgreSQL,
-                as well as React on the client side.  In addition, I have worked in the Information Technology field for the past three
-                years using PowerShell to efficiently manage Windows environments.  I have spent the last couple years earning a
-                degree in software engineering and working towards a career in software. I have decided that web development is really where my
-                interests are and I am excited to get into this field.
+              <p style={{marginTop: '20px', fontSize: '20px'}}>
+              I am a software engineer that is enthusiastic about developing effective software solutions.  
+              My most recent experience is with Ruby on Rails and React, as well as previous experience with Java, 
+              PowerShell and the .net framework.  I have professional experience in both IT and non-IT fields for solving 
+              interesting problems and creating innovative new software programs.  I am committed to working within client 
+              and project specifications to deliver software solutions.
+              
               </p>
-              <ul>
+              <ul style={{fontSize: '20px', lineHeight: '130%'}}>
                 <li>Knowledge of software engineering concepts</li>
-                <li>Solid understanding of Ruby on Rails, React, and MVC software architectural pattern</li>
+                <li>Solid understanding of Ruby on Rails and MVC software architectural pattern</li>
+                <li>Efficient with React and single page applications</li>
+                <li>Familiar with Java, and C# languages</li>
                 <li>Familiar with SQL and managing data in a relational database</li>
+                <li>Knowledge and experience with Git</li>
                 <li>Experience using PowerShell to manage Windows workstations</li>
                 <li>Knowledge of Routing, Switching, Windows 7 Configuration, and Active Directory</li>
                 <li>Experience in Supervising System Administrators</li>
@@ -83,7 +98,7 @@ class AboutMe extends React.Component{
     return(
       <Segment raised>
         <Grid columns={2} >
-          <h2>Projects</h2>
+          <Header as='h1' style={{textDecoration: 'underline', marginTop: '10px'}}>Projects</Header>
           <Grid.Row>
               { projects.map( (project, i) => {
                   return <Project key={i} project={project} />
@@ -99,15 +114,15 @@ class AboutMe extends React.Component{
     let { languages, frameworks } = this.state
     return(
       <Segment raised>
-        <h3>Languages</h3>
-        <ul>
+        <h3 style={{fontSize: '20px'}}>Languages</h3>
+        <ul style={{fontSize: '20px', lineHeight: '120%'}}>
           { languages.map( (language, i) => {
               return <li key={i}>{language}</li>
             })
           }
         </ul>
         <h3>Frameworks and Libraries</h3>
-        <ul>
+        <ul style={{fontSize: '20px', lineHeight: '120%'}}>
           { frameworks.map( (framework, i) => {
               return <li key={i}>{framework}</li>
             })
