@@ -15,7 +15,7 @@ class AboutMe extends React.Component{
         mailers, display upcoming events, modify the home page, and discuss HOA business securely in a discussion forum.  This \
         application is in production so the code has not been made public, however access to the code can be provided upon request. \
         An admin login is admin@test.com with password of password.  Feel free to navigate the site and test its functionality.',
-        herokuLink: 'https://stubbedsite.com'
+        herokuLink: 'https://woodstockvillage.herokuapp.com'
       },
       {title: 'Weather Application',
         description: 'This was a group project.  It is written in Ruby on Rails as an API with a React \
