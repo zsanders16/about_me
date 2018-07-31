@@ -4,7 +4,7 @@ import { Segment, Container, Grid, Image, Header } from 'semantic-ui-react';
 
 class AboutMe extends React.Component{
   state = {
-    languages: ['Ruby', 'Javascript', 'HTML', 'CSS', 'SQL', 'Java', 'C#'],
+    languages: ['Ruby', 'Golang', 'Javascript', 'HTML', 'CSS', 'SQL', 'Java', 'Python'],
     frameworks: ['Rails', 'React', 'Redux', 'Bootstrap', 'Materialize', 'Semantic UI React' ],
     projects: [
       {title: 'Homeowner Association Site',
@@ -79,8 +79,8 @@ class AboutMe extends React.Component{
               <ul style={{fontSize: '20px', lineHeight: '130%'}}>
                 <li>Knowledge of software engineering concepts</li>
                 <li>Solid understanding of Ruby on Rails and MVC software architectural pattern</li>
+                <li>Experience utilizing Golang</li>
                 <li>Efficient with React and single page applications</li>
-                <li>Familiar with Java, and C# languages</li>
                 <li>Familiar with SQL and managing data in a relational database</li>
                 <li>Knowledge and experience with Git</li>
                 <li>Experience using PowerShell to manage Windows workstations</li>
